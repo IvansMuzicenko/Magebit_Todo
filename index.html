@@ -8,7 +8,49 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="page">
-    <div></div>
+    <nav class="navbar">
+      <h1>TODO List</h1>
+      <button class="add-column">Add Column</button>
+    </nav>
+    <div class="app">
+      <div class="app__columns">
+        <div class="app__column--template" data-column="0">
+          <h2 class="app__column__title"></h2>
+          <button class="app__cell--add">+</button>
+        </div>
+        <div class="app__cell--template">
+          <h3 class="app__cell__title">Title</h3>
+          <p class="app__cell__desc">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit ad
+            iusto soluta officia vitae aspernatur id adipisci debitis officiis
+            obcaecati.
+          </p>
+        </div>
+      </div>
+      <div class="app__form__column hide">
+        <input
+          class="app__form__column__title"
+          type="text"
+          placeholder="Enter a column title"
+        />
+        <button class="app__form__column__submit" type="submit">Create</button>
+        <button class="app__form__column__cancel" type="submit">Cancel</button>
+      </div>
+      <div class="app__form__cell hide">
+        <input
+          class="app__form__cell__title"
+          type="text"
+          placeholder="Enter a cell title"
+        />
+        <input
+          class="app__form__cell__desc"
+          type="text"
+          placeholder="Enter a cell description"
+        />
+        <button class="app__form__cell__submit" type="submit">Create</button>
+        <button class="app__form__cell__cancel" type="submit">Cancel</button>
+      </div>
+    </div>
   </body>
 </html>
-<script src="script.js"></script>
+<script type="module" src="script.js"></script>
